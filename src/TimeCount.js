@@ -44,8 +44,7 @@ const TimeCount = () => {
   return (
     <div className="text-center">
       <div className="bg-light text-dark p-4">
-        {/* eslint-disable-next-line */}
-        <marquee><h1>⏱ Time Tracker ⏱</h1></marquee>
+        <h1>⏱ Time Tracker ⏱</h1>
       </div>
       <hr className="my-5" />
 
