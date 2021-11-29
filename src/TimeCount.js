@@ -57,29 +57,29 @@ const TimeCount = () => {
             </div> </Grid>}
 
           <Grid container justifyContent="center" my={2}> 
-              <Grid item lg={1}>
-                  <label className="mt-2" htmlFor="starttime">Start Time : </label>
+              <Grid item lg={1} xs={3} md={3}>
+                  <label className="mt-2 float-end" htmlFor="starttime">Start Time : </label>
               </Grid>
-              <Grid item lg={2}>
-                  <input type="time" name="starttime" className="form-control" id="starttime" value={time.starttime} onChange={(e) => handleChange(e) } />
-              </Grid>
-          </Grid>
-
-          <Grid container justifyContent="center" my={2}> 
-              <Grid item lg={1}>
-                <label className="mt-2" htmlFor="break">Break :</label>
-              </Grid>
-              <Grid item lg={2}>
-                <input type="text" name="break" className="form-control" id="break" value={time.break} onChange={(e) => handleChange(e) } />
+              <Grid item lg={2} xs={5} md={5}>
+                  <input type="time" name="starttime" className="form-control mx-2" id="starttime" value={time.starttime} onChange={(e) => handleChange(e) } />
               </Grid>
           </Grid>
 
           <Grid container justifyContent="center" my={2}> 
-              <Grid item lg={1}>
-              <label className="mt-2" htmlFor="endtime">End Time :</label>
+              <Grid item lg={1} xs={3} md={3}>
+                <label className="mt-2 float-end" htmlFor="break">Break :</label>
               </Grid>
-              <Grid item lg={2}>
-              <input type="time" name="endtime" className="form-control" id="endtime" value={time.endtime} onChange={(e) => handleChange(e) } />
+              <Grid item lg={2} xs={5} md={5}>
+                <input type="text" name="break" className="form-control mx-2" id="break" value={time.break} onChange={(e) => handleChange(e) } />
+              </Grid>
+          </Grid>
+
+          <Grid container justifyContent="center" my={2}> 
+              <Grid item lg={1} xs={3} md={3}>
+              <label className="mt-2 float-end" htmlFor="endtime">End Time :</label>
+              </Grid>
+              <Grid item lg={2} xs={5} md={5}>
+              <input type="time" name="endtime" className="form-control mx-2" id="endtime" value={time.endtime} onChange={(e) => handleChange(e) } />
               </Grid>
           </Grid>
         
